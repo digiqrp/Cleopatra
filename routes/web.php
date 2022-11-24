@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[HomeController::class,'index'])->name('home');
+Route::get('/typography',[HomeController::class,'typography'])->name('typography');
+Route::get('/alerts',[HomeController::class,'alerts'])->name('alerts');
+Route::get('/buttons',[HomeController::class,'buttons'])->name('buttons');
+Route::get('/email',[HomeController::class,'email'])->name('email');
 
 Route::get('/dashboard',[Dashboard::class,'index'] )->middleware(['auth', 'verified'])->name('dashboard');
 
