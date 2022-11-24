@@ -6,7 +6,7 @@
 
             <!-- image -->
             <div class="img-wrapper w-40 h-40 flex justify-center items-center">
-                <img src="./img/happy.svg" alt="img title">
+                <img src="{{ Vite::asset('resources/img/happy.svg') }}">
             </div>
             <!-- end image -->
 
