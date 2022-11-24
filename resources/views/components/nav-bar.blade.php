@@ -3,12 +3,13 @@
 
     <!-- logo -->
     <div class="flex-none w-56 flex flex-row items-center">
-        <x-application-logo class="block h-9 w-auto fill-current text-gray-800"></x-application-logo>
-        <strong class="capitalize ml-1 flex-1">{{ config('app.name') }}</strong>
-
-        <button id="sliderBtn" class="flex-none text-right text-gray-900 hidden md:block">
-            <i class="fad fa-list-ul"></i>
-        </button>
+        <a href="{{ route('home') }}">
+            <x-application-logo class="block h-9 w-auto fill-current text-gray-800"></x-application-logo>
+        </a>
+            <strong class="capitalize ml-1 flex-1">{{ config('app.name') }}</strong>
+            <button id="sliderBtn" class="flex-none text-right text-gray-900 hidden md:block">
+                <i class="fad fa-list-ul"></i>
+            </button>
     </div>
     <!-- end logo -->
 
