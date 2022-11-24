@@ -1,8 +1,7 @@
-# DigiQRP Site Framework
+# Cleopatra – Clean & Minimal tailwind css Admin Dashboard Template
 
-This is the Laravel 9 implementation of DigiQRP a hobby site using Laravel Breeze 
-and a custom control panel, along with groups and roles.
-
+This is the Laravel 9 implementation of Cleopatra TailWind CSS based admin panel with Laravel 9 and Laravel Breeze 
+the project is based upon the work of [Mohamed Said](https://moesaid.com).
 This Project is best developed locally with Docker which is a great development platform, 
 please ensure that that you have this installed for your target operating system.
 
