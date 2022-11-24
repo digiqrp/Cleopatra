@@ -3,9 +3,12 @@
 @import url('https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap');
 @import url('https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css');
 
+@import "./base/general.css";
 @import "./base/report-card.css";
-@import "./base/typography.css";
-@import "./base/alert.css";
+@import "ui/typography.css";
+@import "ui/buttons.css";
+@import "ui/alert.css";
+@import "ui/prism.css";
 
 @tailwind base;
 @tailwind components;

@@ -15,7 +15,7 @@
         <p class="uppercase text-xs text-gray-600 mb-4 tracking-wider">homes</p>
 
         <!-- link -->
-        <a href="./index.html" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+        <a href="{{ route('home') }}" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i class="fad fa-chart-pie text-xs mr-2"></i>
             Analytics dashboard
         </a>
@@ -31,7 +31,7 @@
         <p class="uppercase text-xs text-gray-600 mb-4 mt-4 tracking-wider">apps</p>
 
         <!-- link -->
-        <a href="./email.html" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+        <a href="{{ route('email') }}" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i class="fad fa-envelope-open-text text-xs mr-2"></i>
             email
         </a>
@@ -76,14 +76,14 @@
         <p class="uppercase text-xs text-gray-600 mb-4 mt-4 tracking-wider">UI Elements</p>
 
         <!-- link -->
-        <a href="./typography.html" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+        <a href="{{ route('typography') }}" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i class="fad fa-text text-xs mr-2"></i>
             typography
         </a>
         <!-- end link -->
 
         <!-- link -->
-        <a href="./alert.html" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+        <a href="{{ route('alerts') }}" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i class="fad fa-whistle text-xs mr-2"></i>
             alerts
         </a>
@@ -91,7 +91,7 @@
 
 
         <!-- link -->
-        <a href="./buttons.html" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
+        <a href="{{ route('buttons') }}" class="mb-3 capitalize font-medium text-sm hover:text-teal-600 transition ease-in-out duration-500">
             <i class="fad fa-cricket text-xs mr-2"></i>
             buttons
         </a>

@@ -1,10 +1,36 @@
 # Cleopatra – Clean & Minimal tailwind css Admin Dashboard Template
 
 This is the Laravel 9 implementation of Cleopatra TailWind CSS based admin panel with Laravel 9 and Laravel Breeze 
-the project is based upon the work of [Mohamed Said](https://moesaid.com).
-This Project is best developed locally with Docker which is a great development platform, 
-please ensure that that you have this installed for your target operating system.
+the project is based upon the work of [Mohamed Said](https://moesaid.com). The original demonstration was supplied 
+as a simple flat html project this is an attempt to bridge the gap for other developers to enable them to leverage 
+on the example provided with a Laravel 9 project.
 
+Note this Project was and is best developed locally with Docker which is a great development platform, 
+please ensure that that you have this installed for your target operating system. 
+
+Docker can be used to provide a consistent environment for developer to craft their solutions, we opted for a raw docker
+implementation as opposed to laravel sail so that we did not pollute the base project, this hopefully will serve as 
+a fully featured starting point for a Laravel 9.X project.
+
+
+
+# Using Npm
+Ensure that npm is installed and runnable via the command line.
+
+run the following
+
+`npm install`
+
+then on development, this will auto refresh using vite 
+
+`npm run dev`
+
+for production
+
+`npm run build`
+
+This will build the assets and css ready for development, the first commend does in fact provide auto updates
+/ auto build as you code your css etc.
 
 # Docker Usage
 ### COMMANDS:

@@ -1,4 +1,6 @@
 import './bootstrap';
+import './prism';
+import './general'
 
 import Alpine from 'alpinejs';
 import.meta.glob([
