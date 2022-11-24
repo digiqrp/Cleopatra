@@ -1,6 +1,7 @@
 <?php
 
     use App\Http\Controllers\Dashboard;
+    use App\Http\Controllers\EcommerceController;
     use App\Http\Controllers\HomeController;
     use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -21,6 +22,8 @@ Route::get('/typography',[HomeController::class,'typography'])->name('typography
 Route::get('/alerts',[HomeController::class,'alerts'])->name('alerts');
 Route::get('/buttons',[HomeController::class,'buttons'])->name('buttons');
 Route::get('/email',[HomeController::class,'email'])->name('email');
+
+Route::get('/ecommerce',[EcommerceController::class,'index'])->name('ecommerce');
 
 Route::get('/dashboard',[Dashboard::class,'index'] )->middleware(['auth', 'verified'])->name('dashboard');
 
