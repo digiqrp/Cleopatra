@@ -33,6 +33,22 @@ This will build the assets and css ready for development, the first commend does
 / auto build as you code your css etc.
 
 # Docker Usage
+This docker implementation splits the normal nginx config used to serve the site into two containers.
+php-fpm does not have xdebug loaded, but php-xdebug does, the advantage of this is that the normal ( non debug ui)
+runs at full speed only when you enable the listener and the xdebug extension does the debugger get triggered.
+We have supplied a sample xdebug config in /docker/php/dev note also that the server name is set in the nginx config file at 
+docker nginx/default.conf, this is to enable PHPStorm to correctly pick up the server name when debugging, you should 
+modify this server name to suite. however the following entry 
+
+`fastcgi_param SERVER_NAME $host;`
+
+should be sufficient for this purpose.
+
+A useful start command is below this will ensure that your containers / code and config files 
+are upto date.
+
+`docker-compose up --build --force-recreate --remove-orphans`
+
 ### COMMANDS:
 `docker --help`
 
@@ -48,7 +64,7 @@ This will build the assets and css ready for development, the first commend does
 ### Run project and force container recreation runs in background
 `docker-compose up -d --force-recreate`
 
-### Run project rebuilding as required and remove any orphaned containers
+### Run project rebuilding as required and remove any orphaned containers ( Recommended )
 `docker-compose up --force-recreate --remove-orphans --build`
 
 ### Stop the running project that was started with -d switch
@@ -68,9 +84,12 @@ restart docker desktop
 `docker stop [IMAGE ID]`
 
 ### Log into a container
+
 `docker-compose exec mysql bash`
 
-`docker-compose exec php-fpm sh`
+`docker-compose exec cleopatra_php_fpm_1 sh`
+
+`docker-compose exec <container-name> sh`
 
 ### REMOVE ALL THE THINGS RM -RF
 `docker system prune -a`
