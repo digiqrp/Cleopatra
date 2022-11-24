@@ -4,6 +4,8 @@
 @import url('https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css');
 
 @import "./base/report-card.css";
+@import "./base/typography.css";
+@import "./base/alert.css";
 
 @tailwind base;
 @tailwind components;
